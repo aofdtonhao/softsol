@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:gravity="center_horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content">
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/iconCultureEcoImage" android:src="@drawable/plants1"></ImageView>
+    <TextView android:text="TextView" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/iconCultureEcoText" android:gravity="center"></TextView>
+</LinearLayout>

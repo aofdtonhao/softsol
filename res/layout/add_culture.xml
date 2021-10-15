@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<TextView android:layout_width="wrap_content"
+		      android:layout_height="wrap_content" 
+		      android:text="Cadastrar Cultura"
+		      android:textSize="50sp" 
+		      android:textStyle="bold">
+	</TextView>
+	<LinearLayout android:layout_height="wrap_content"
+		          android:layout_width="match_parent"
+		          android:padding="10sp" 
+		          android:gravity="center">
+		<TextView android:layout_width="wrap_content"
+			      android:layout_height="wrap_content" 
+			      android:textSize="20sp" 
+			      android:textStyle="bold" android:text="Nome" android:paddingRight="80sp">
+		</TextView>
+		<AutoCompleteTextView android:id="@+id/culture_name"
+			                  android:layout_width="wrap_content" 
+			                  android:layout_height="wrap_content"
+			                  android:width="400sp">
+	    </AutoCompleteTextView>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" 
+	              android:layout_width="match_parent" 
+	              android:gravity="center" 
+	              android:padding="10sp">
+		<TextView android:layout_width="wrap_content" 
+		          android:layout_height="wrap_content" 
+		          android:text="Altura" 
+		          android:textSize="20sp" 
+		          android:textStyle="bold" android:paddingRight="80sp">
+		</TextView>
+		<AutoCompleteTextView android:id="@+id/height" 
+		                      android:layout_width="wrap_content" 
+		                      android:layout_height="wrap_content" 
+		                      android:width="400sp"
+		                      android:numeric="integer">
+		</AutoCompleteTextView>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" 
+	              android:layout_width="match_parent" 
+	              android:gravity="center" 
+	              android:padding="10sp">
+		<TextView android:layout_width="wrap_content" 
+		          android:layout_height="wrap_content" 
+		          android:text="Largura Copa" 
+		          android:textSize="20sp" 
+		          android:textStyle="bold" android:paddingRight="10sp">
+	    </TextView>
+		<AutoCompleteTextView android:id="@+id/treetopWidth" 
+		                      android:layout_width="wrap_content" 
+		                      android:layout_height="wrap_content" 
+		                      android:width="400sp">
+		</AutoCompleteTextView>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" 
+	              android:layout_width="match_parent" 
+	              android:gravity="center" 
+	              android:padding="10sp">
+		<TextView android:layout_width="wrap_content" 
+		          android:layout_height="wrap_content" 
+		          android:text="Altura Copa" 
+		          android:textSize="20sp" 
+		          android:textStyle="bold" android:paddingRight="30sp">
+	    </TextView>
+		<AutoCompleteTextView android:id="@+id/treetopHeight" 
+		                      android:layout_width="wrap_content" 
+		                      android:layout_height="wrap_content" 
+		                      android:width="400sp">
+	    </AutoCompleteTextView>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout1">
+		<TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tipo" android:textSize="20sp" android:textStyle="bold" android:paddingLeft="340sp" android:layout_margin="25sp" android:paddingRight="55sp"></TextView>
+		<RadioGroup android:id="@+id/radioGroup1" android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="horizontal">
+			<RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="true" android:layout_margin="20sp" android:text="Nativa" android:paddingLeft="60sp" android:id="@+id/nativeType" android:saveEnabled="false"></RadioButton>
+			<RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_margin="20sp" android:text="Economica" android:paddingLeft="60sp" android:id="@+id/economicType" android:saveEnabled="false"></RadioButton>
+		</RadioGroup>
+	 </LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" 
+	              android:layout_width="match_parent" android:gravity="center_horizontal">
+		<Button android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:id="@+id/save_culture"
+		        android:text="Salvar"
+		        android:onClick="onSaveClick"
+		        android:width="150sp">
+		</Button>
+		<Button android:id="@+id/update_culture"
+		        android:text="Alterar"
+		        android:width="150sp" 
+		        android:onClick="onUpdateClick" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content">
+		</Button>
+		<Button android:id="@+id/delete_culture"
+		        android:text="Excluir"
+		        android:width="150sp" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:onClick="onDeleteClick">
+		</Button>
+		<Button android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:text="Cancelar" 
+		        android:onClick="onCancelClick"
+		        android:width="150sp">
+	    </Button>
+	</LinearLayout>
+</LinearLayout>
